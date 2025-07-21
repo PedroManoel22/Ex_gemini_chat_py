@@ -1,0 +1,14 @@
+#Exercício 10: Cálculo de Fatorial (Desafio - Recursão)
+#Crie uma função chamada calcular_fatorial(numero) que recebe um número inteiro não negativo e retorna o seu fatorial. Lembre-se que o fatorial de 0 é 1, e o fatorial de um número n é n
+#times(n−1)
+#times(n−2)
+#times
+#dots
+#times1. Tente resolver este exercício usando recursão (a função chamando a si mesma).
+#Exemplo de Uso:
+#fatorial_5 = calcular_fatorial(5)
+#print(fatorial_5)
+# Saída esperada: 120 (5 * 4 * 3 * 2 * 1)
+#fatorial_0 = calcular_fatorial(0)
+#print(fatorial_0)
+# Saída esperada: 1
