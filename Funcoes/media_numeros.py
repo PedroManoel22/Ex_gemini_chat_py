@@ -7,3 +7,15 @@
 #media2 = calcular_media(5, 10, 15, 20, 25)
 #print(media2)
 # Saída esperada: 15.0
+
+
+def calcular_media(*numeros):
+    soma = 0
+    for n in numeros:
+        soma += n
+    return soma / len(numeros)
+
+media1 = calcular_media(10, 20, 30)
+print(media1)
+media2 = calcular_media(5, 10, 15, 20, 25)
+print(media2)

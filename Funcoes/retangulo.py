@@ -7,3 +7,13 @@
 #area2 = calcular_area_retangulo(7.5, 2)
 #print(area2)
 # Saída esperada: 15.0
+
+
+def calcular_area_retangulo(largura, altura):
+    return largura * altura
+
+
+area1 = calcular_area_retangulo(4, 5)
+print(area1)
+area2 = calcular_area_retangulo(7.5, 2)
+print(area2)

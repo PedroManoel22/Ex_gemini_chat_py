@@ -6,3 +6,11 @@
 # Saída esperada: Prazer em conhecê-lo(a), Maria!
 #apresentar()
 # Saída esperada: Prazer em conhecê-lo(a), Visitante!
+
+
+def apresentar(nome='Visitante'):
+    print(f'Prazer em conhecê-lo(a), {nome}!')
+
+    
+apresentar('Maria')
+apresentar()
