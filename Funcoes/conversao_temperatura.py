@@ -12,3 +12,24 @@
 #lista_f = converter_lista_temperaturas(lista_c)
 #print(f"Temperaturas em Fahrenheit: {lista_f}")
 # Saída esperada: Temperaturas em Fahrenheit: [32.0, 50.0, 68.0, 86.0, 104.0]
+
+
+def celsius_para_fahrenheit(celsius):
+    return  (celsius * 9/5) + 32
+
+
+temp_c = 25
+temp_f = celsius_para_fahrenheit(temp_c)
+print(f'{temp_c}°C é igual a {temp_f}°F')
+
+
+def converter_lista_temperaturas(temps):
+    temps_f = []
+    for temp in temps:
+        temps_f.append((temp * 9/5) + 32)
+    return temps_f
+
+
+lista_c = [0, 10, 20, 30, 40]
+lista_f = converter_lista_temperaturas(lista_c)
+print(f"Temperaturas em Fahrenheit: {lista_f}")

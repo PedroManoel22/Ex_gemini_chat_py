@@ -1,5 +1,6 @@
 #Exercício 11: Validação de Idade
-#Crie uma função chamada validar_idade(idade) que recebe um número inteiro idade. A função deve retornar True se a idade for válida (entre 0 e 150, inclusive) e False caso contrário.
+#Crie uma função chamada validar_idade(idade) que recebe um número inteiro idade. 
+#A função deve retornar True se a idade for válida (entre 0 e 150, inclusive) e False caso contrário.
 #Exemplo de Uso:
 #print(validar_idade(25))
 # Saída esperada: True
@@ -7,3 +8,16 @@
 # Saída esperada: False
 #print(validar_idade(200))
 # Saída esperada: False
+
+
+def validar_idade(idade):
+    if idade >= 0 and idade <= 150:
+        return True
+    else:
+        return False
+    
+
+print(validar_idade(25))
+print(validar_idade(-5))
+print(validar_idade(200))
+print(validar_idade(150))
