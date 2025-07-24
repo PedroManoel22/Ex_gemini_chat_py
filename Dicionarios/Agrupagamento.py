@@ -20,3 +20,27 @@
 #                {'nome': 'Luiza', 'curso': 'Medicina', 'idade': 23}],
 #   'Direito': [{'nome': 'Ana', 'curso': 'Direito', 'idade': 19}]
 # }
+
+
+def agrupamento_por_curso(alunos, chave):
+    dicionario_agrupado = {}
+    for aluno in alunos:
+        valor_da_chave = aluno.get(chave)
+        if valor_da_chave is not None: # Verifica se existe e tem valor
+            if valor_da_chave in dicionario_agrupado:
+                dicionario_agrupado[valor_da_chave].append(aluno)# adicionar em uma lista já existente 
+            else:
+                dicionario_agrupado[valor_da_chave] = [aluno] # adicionar uma nova lista
+    return dicionario_agrupado
+
+
+alunos = [
+   {'nome': 'João', 'curso': 'Engenharia', 'idade': 20},
+    {'nome': 'Maria', 'curso': 'Medicina', 'idade': 22},
+    {'nome': 'Pedro', 'curso': 'Engenharia', 'idade': 21},
+    {'nome': 'Ana', 'curso': 'Direito', 'idade': 19},
+    {'nome': 'Luiza', 'curso': 'Medicina', 'idade': 23}
+ ]
+chave_agrupamento = 'curso'
+resultado = agrupamento_por_curso(alunos, chave_agrupamento)
+print(resultado)

@@ -4,3 +4,11 @@
 
 #pares = [('nome', 'Carlos'), ('idade', 30), ('cidade', 'São Paulo')]
 # Saída esperada: {'nome': 'Carlos', 'idade': 30, 'cidade': 'São Paulo'}
+
+
+def transformar(x):
+    return dict(x)
+
+
+pares = [('nome', 'Carlos'), ('idade', 30), ('cidade', 'São Paulo')]
+print(transformar(pares))
