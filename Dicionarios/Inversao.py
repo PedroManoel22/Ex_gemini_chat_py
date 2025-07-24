@@ -5,3 +5,15 @@
 
 #cores = {'red': '#FF0000', 'green': '#00FF00', 'blue': '#0000FF'}
 # Saída esperada: {'#FF0000': 'red', '#00FF00': 'green', '#0000FF': 'blue'}
+
+
+def inverter_dict(x):
+    novo_dict = {}
+    for k,v in x.items():
+        novo_dict.setdefault(v,k)
+    return novo_dict
+
+
+cores = {'red': '#FF0000', 'green': '#00FF00', 'blue': '#0000FF'}
+chamada_inverter = inverter_dict(cores)
+print(chamada_inverter)
