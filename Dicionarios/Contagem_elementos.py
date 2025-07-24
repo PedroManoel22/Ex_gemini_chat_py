@@ -17,3 +17,22 @@
 #   'cores': 2,
 #   'vazio': 0
 # }
+
+
+def contagem(dados):
+    novo_dict = {}
+    for k,v in dados.items():
+        if type(v) == list:
+            tamanho = len(v)
+            novo_dict.setdefault(k,tamanho)
+        else:
+            novo_dict.setdefault(k,v)
+    return novo_dict
+
+dados_variados = {
+    'frutas': ['maçã', 'banana', 'laranja'],
+    'numero': 123,
+    'cores': ['azul', 'verde'],
+    'vazio': []
+}
+print(contagem(dados_variados))
