@@ -15,3 +15,16 @@
 # ]
 # Saída esperada (aproximada, ordem não importa):
 # {'mundo', 'olá', 'este', 'é', 'o', 'documento', 'um', 'python', 'segundo', 'legal'}
+
+import re
+def palavras_unicas(x):
+   print(set(x))
+    
+
+
+documentos = [
+     "Olá mundo, este é o documento um.",
+     "Mundo Python, este é o segundo documento.",
+     "Python é legal. Olá!"
+]
+palavras_unicas(documentos)
