@@ -19,3 +19,25 @@
 #   1: {'write', 'execute'},
 #   2: {'read'}
 # }
+
+
+def identificacao(necessarias, usuario):
+    for c, v in enumerate(usuario):
+        diferenca = necessarias - v
+        print(c,diferenca)
+            
+
+permissoes_necessarias = {'read', 'write', 'execute', 'delete'}
+permissoes_usuarios = [
+     {'read', 'write', 'execute'},
+     {'read', 'delete'},
+     {'write', 'execute', 'delete', 'admin'}
+ ]
+
+identificacao(permissoes_necessarias, permissoes_usuarios)
+# Saída esperada (aproximada):
+# {
+#   0: {'delete'},
+#   1: {'write', 'execute'},
+#   2: {'read'}
+# }
