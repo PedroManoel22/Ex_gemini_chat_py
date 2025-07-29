@@ -21,3 +21,32 @@
 #   'leitura': {'Livro'},
 #   'portatil': {'Laptop'}
 # }
+
+
+def filtrar_itens_por_tags(itens, tags_de_interesse):
+    resultado = {tag: [] for tag in tags_de_interesse}
+
+    for item in itens:
+        nome_item = item['nome']
+        tags_item = set(item['tags'])  
+
+     
+        tags_comuns = tags_item.intersection(tags_de_interesse)
+
+        for tag in tags_comuns:
+            resultado[tag].append(nome_item)
+    return resultado
+
+
+itens = [
+    {'nome': 'Laptop', 'tags': ['eletronico', 'portatil', 'tecnologia']},
+    {'nome': 'Livro', 'tags': ['educacao', 'leitura', 'ficcao']},
+    {'nome': 'Mouse', 'tags': ['eletronico', 'periferico']},
+    {'nome': 'Teclado', 'tags': ['eletronico', 'periferico', 'acessorio']}
+]
+
+tags_de_interesse = {'eletronico', 'leitura', 'portatil'}
+
+dados_filtrados = filtrar_itens_por_tags(itens, tags_de_interesse)
+print(dados_filtrados)
+

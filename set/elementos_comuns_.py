@@ -16,8 +16,8 @@
 # Comuns: {4, 5}
 # Unicos: {1, 2, 3, 6, 7, 8}
 def elementos_comuns(x, y):
-    e_lista1 = type(x) is list
-    e_lista2 = type(y) is list
+    e_lista1 = type(x) is list # verifica se a primeira lista é realmente uma lista
+    e_lista2 = type(y) is list # verfica se a segunda lista é realmente uma lista
     if e_lista1 and e_lista2:
         if len(x) > 0 and len(y) > 0:
              x = set(x)
