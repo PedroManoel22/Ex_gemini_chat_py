@@ -25,7 +25,7 @@
 
 def filtrar_itens_por_tags(itens, tags_de_interesse):
     resultado = {tag: [] for tag in tags_de_interesse}
-
+    print(resultado)
     for item in itens:
         nome_item = item['nome']
         tags_item = set(item['tags'])  
