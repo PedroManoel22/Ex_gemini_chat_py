@@ -33,3 +33,4 @@ def converter_lista_temperaturas(temps):
 lista_c = [0, 10, 20, 30, 40]
 lista_f = converter_lista_temperaturas(lista_c)
 print(f"Temperaturas em Fahrenheit: {lista_f}")
+print(f'Temperatura em celsius: {lista_c}')
