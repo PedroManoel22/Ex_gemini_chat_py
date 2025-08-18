@@ -1,1 +1,0 @@
-# Use uma função lambdacomo a função filter()para filtrar os números ímpares da lista [1, 2, 3, 4, 5, 6, 7, 8, 9].

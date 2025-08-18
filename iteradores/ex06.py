@@ -1,1 +1,1 @@
-# Crie uma classe chamada Contadorque seja um iterador. O Contadordeve receber um valor inicial e um valor final, e deve retornar o próximo número a cada chamada de next().
+# Crie uma classe chamada Contador que seja um iterador. O Contador deve receber um valor inicial e um valor final, e deve retornar o próximo número a cada chamada de next().

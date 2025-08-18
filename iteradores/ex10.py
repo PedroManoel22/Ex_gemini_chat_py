@@ -1,1 +1,0 @@
-# Explique a diferença entre um iterável (como uma lista) e um iterador .

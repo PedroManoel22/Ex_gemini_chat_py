@@ -1,1 +1,0 @@
-# Crie uma lista de nomes e use a função iter()para criar um iterador . Use a função next()para imprimir os três primeiros nomes.

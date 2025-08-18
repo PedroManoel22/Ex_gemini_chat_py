@@ -1,1 +1,0 @@
-# Use lambdapara criar uma função que calcula o produto de três números.

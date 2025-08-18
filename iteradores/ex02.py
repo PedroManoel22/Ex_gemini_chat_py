@@ -1,1 +1,0 @@
-# Crie um for loop para iterar sobre a lista numeros = [10, 20, 30]e imprimir cada elemento. Explique como o for loopusa iteradores internamente.

@@ -1,1 +1,0 @@
-# Use uma função lambdacom a função sorted()para ordenar uma lista de tuplas baseada no segundo elemento da tupla. A lista é [('maçã', 5), ('banana', 2), ('uva', 8)].

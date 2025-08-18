@@ -1,1 +1,0 @@
-# Crie uma função lambdaque alguns dois números e um armazenamento em uma chamada variável soma.

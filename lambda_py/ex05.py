@@ -1,1 +1,0 @@
-# Crie uma função lambdapara verificar se uma string começa com a letra 'P'.
