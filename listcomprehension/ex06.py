@@ -1,0 +1,1 @@
+# Crie uma lista de listas (matriz) 3x3 onde cada elemento seja a soma de seus índices de linha e coluna. [[0, 1, 2], [1, 2, 3], [2, 3, 4]].

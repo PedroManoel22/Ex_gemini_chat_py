@@ -1,0 +1,1 @@
+# Importe o módulo ose use a função os.getcwd()para obter o caminho do diretório de trabalho atual.

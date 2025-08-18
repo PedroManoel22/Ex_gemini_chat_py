@@ -1,0 +1,1 @@
+# Crie um gerador para calcular a sequência de Fibonacci até um determinado número de elementos.

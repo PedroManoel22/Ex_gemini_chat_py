@@ -1,0 +1,1 @@
+# Qual a principal vantagem de usar uma função lambdaem vez de uma função def? Dê um exemplo.SSS

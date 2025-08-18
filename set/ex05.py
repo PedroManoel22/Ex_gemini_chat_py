@@ -1,0 +1,1 @@
+# Usando os mesmos setsdo exercício anterior, encontre a interseção (elementos em comum) e imprima o resultado.

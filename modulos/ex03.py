@@ -1,0 +1,1 @@
+# Importe o módulo randome use a função random.randint()para gerar um número inteiro aleatório entre 1 e 10.

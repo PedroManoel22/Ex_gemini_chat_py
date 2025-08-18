@@ -1,0 +1,1 @@
+# Use uma função next()em uma lista vazia. O que acontece? (Dica: pesquisa sobre a exceção StopIteration).

@@ -1,0 +1,1 @@
+# Crie uma lista com o comprimento de cada palavra na frase 'O Python é uma linguagem poderosa'.

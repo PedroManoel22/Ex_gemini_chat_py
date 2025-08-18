@@ -1,0 +1,1 @@
+# Remova as vogais de uma string usando list comprehension. A string de entrada é 'programação'.

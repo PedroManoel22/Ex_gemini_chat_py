@@ -1,0 +1,1 @@
+# Use uma função lambdacom a função map()para dobrar todos os números da lista [1, 2, 3, 4, 5].

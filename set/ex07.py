@@ -1,0 +1,1 @@
+# Verifique se o set_aé um superconjunto do set_b. (Dica: pesquisa sobre o método .issuperset()).

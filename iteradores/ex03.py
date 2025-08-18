@@ -1,0 +1,1 @@
+# Crie um gerador que produza números pares de 0 a 10. Chame o gerador e itere sobre ele para imprimir os números. (Dica:) yield.

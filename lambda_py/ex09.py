@@ -1,0 +1,1 @@
+# Escreva uma lambdapara verificar se um número é par.

@@ -1,0 +1,1 @@
+# Qual a diferença entre import moduloe from modulo import funcao? Explique com um exemplo prático.

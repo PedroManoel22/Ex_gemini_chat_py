@@ -1,0 +1,1 @@
+# Verifique se o set_bé um subconjunto do set_a. (Dica: pesquisa sobre o método .issubset()).

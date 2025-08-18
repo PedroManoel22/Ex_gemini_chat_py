@@ -1,0 +1,1 @@
+# Use filtere lambdapara selecionar apenas as strings que possuem mais de 5 caracteres da lista ['Python', 'Java', 'C++', 'JavaScript'].
