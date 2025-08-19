@@ -1,1 +1,0 @@
-# Importe apenas a função sindo módulo mathe calcule o seno de 90 graus (use math.radians()para conversor).

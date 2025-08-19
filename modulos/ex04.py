@@ -1,1 +1,0 @@
-# Crie um arquivo Python chamado meu_modulo.pycom uma função que alguns dois números. Em seguida, grite outro arquivo, importe meu_moduloe use a função.

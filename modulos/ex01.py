@@ -1,1 +1,0 @@
-# Importe o módulo mathe use a função math.sqrt()para calcular a raiz quadrada de 16.

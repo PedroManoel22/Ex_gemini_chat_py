@@ -1,1 +1,0 @@
-# Importe o módulo jsone converta o seguinte dicionário {'nome': 'joão', 'idade': 30}em uma string JSON.
