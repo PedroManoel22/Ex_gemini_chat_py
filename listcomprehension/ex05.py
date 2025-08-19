@@ -1,1 +1,0 @@
-# Crie uma lista com os números de 1 a 100 que são divisíveis por 7.

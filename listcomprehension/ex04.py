@@ -1,1 +1,0 @@
-# Crie uma lista de strings onde cada string seja o nome de uma fruta em guardas da lista frutas = ['maçã', 'banana', 'uva'].

@@ -1,1 +1,0 @@
-# A partir da lista [10, 20, 30, 40, 50], crie uma nova lista onde cada número seja o dobro se for maior que 25, caso contrário, permaneça o mesmo.

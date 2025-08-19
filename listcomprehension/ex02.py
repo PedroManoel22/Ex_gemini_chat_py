@@ -1,1 +1,0 @@
-# Crie uma lista com o quadrado de cada número da lista numeros = [1, 2, 3, 4, 5].
