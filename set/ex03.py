@@ -1,1 +1,0 @@
-# Remova a fruta 'banana'do set frutas.

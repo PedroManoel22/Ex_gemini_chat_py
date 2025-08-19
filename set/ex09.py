@@ -1,1 +1,0 @@
-# Converta a seguinte lista [1, 2, 2, 3, 4, 4, 5]em um setpara remover os elementos duplicados. Em seguida, converta o setde volta para uma lista.

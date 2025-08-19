@@ -1,1 +1,0 @@
-# Execute e use uma função do módulo syspara imprimir a versão do Python que você está usando

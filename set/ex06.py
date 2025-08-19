@@ -1,1 +1,0 @@
-# Encontre a diferença (elementos em set_aque não estão em set_b) entre os setse imprima o resultado.
