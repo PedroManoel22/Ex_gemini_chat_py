@@ -1,8 +1,5 @@
 from random import randint
 
-
-
-
 while True: # loop para saber se o usuário quer continuar ou não 
 
     num_computador = randint(0, 10)
