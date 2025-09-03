@@ -1,0 +1,1 @@
+# Calcule o fatorial de um número inteiro fornecido pelo usuário.

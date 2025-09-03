@@ -1,0 +1,2 @@
+# Calcule e escreva o número de anos necessários para que a população do país A (80.000 habitantes, crescimento de 3% ao ano)
+# ultrapasse ou iguale a população do país B (200.000 habitantes, crescimento de 1.5% ao ano), mantidas as taxas de crescimento.
