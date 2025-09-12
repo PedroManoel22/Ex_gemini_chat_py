@@ -8,6 +8,8 @@ def make_appender():
         lista.append(x)
         return lista
     return interna
+
+
 adiciona = make_appender()
 print(adiciona('oi'))
 print(adiciona('Tudo bem'))
