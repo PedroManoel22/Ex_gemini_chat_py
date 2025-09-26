@@ -86,6 +86,7 @@ if __name__ == "__main__":
         p1 = Usuario('Pedro', 'pedro@gmail.com', '12345678')
         p1.criar_posts('Férias no Brasil')
         p1.criar_posts('Fotos dos Jogos')
+        p1.criar_posts('Foto na praia')
         p1.mostrar_perfl()
         
         # Chamada correta: Sem argumentos, pois o método solicita a senha ao usuário
