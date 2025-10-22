@@ -11,6 +11,9 @@
 
 class Contador:
     def __init__(self, valor=0):
+        if not isinstance(valor, int):
+            raise TypeError(f'o valor deve ser int e não {type(valor).__name__}')
+        
         self.valor = valor
     
     
