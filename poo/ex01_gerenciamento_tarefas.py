@@ -37,13 +37,8 @@ class Tarefa():
         return f'[{status}] {self.descricao}'
 
 
-tarefa_1 = Tarefa(input('café'))
+tarefa_1 = Tarefa('café')
 print(f'Tarefa criada: {tarefa_1}')
 tarefa_1.marcar_como_concluida()
 print(f'Tarefa atualizada: {tarefa_1}')
 tarefa_1.marcar_como_concluida()
-
-
-
-
-
