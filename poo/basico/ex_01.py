@@ -24,8 +24,8 @@ class Carro:
         self.ano = ano
 
 
-    def meu_carro(self):
-        print('Dados do carro:\n'
+    def __str__(self):
+        return ('Dados do carro:\n'
               f'Marca: {self.marca}\n'
               f'Modelo: {self.modelo}\n'
               f'Ano: {self.ano}\n')
@@ -33,5 +33,5 @@ class Carro:
 
 carro1 = Carro('Chevrolet', 'celta', 2010) 
 carro2 = Carro('Fiat', 'uno', 2021)
-carro1.meu_carro()
-carro2.meu_carro()
+print(carro1)
+print(carro1)
