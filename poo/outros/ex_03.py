@@ -14,3 +14,6 @@
 # remover_produto(nome_produto): Remova um produto pelo nome.
 
 # calcular_total(): Retorna a soma dos preços de todos os itens.
+a = 1
+b = 2
+print(a ++ b)
