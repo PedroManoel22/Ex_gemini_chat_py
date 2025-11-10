@@ -1,19 +1,68 @@
 # 2. Loja e Produtos (Agregação)
-# Crie duas classes: Produtoe CarrinhoDeCompras.
+# Crie duas classes: Produto e CarrinhoDeCompras.
 
-# Produto: Atributos nome, preco.
+# Produto: Atributos nome, preco. ✔️
 
-# CarrinhoDeCompras: Atributo itens(lista de objetos Produto).
+# CarrinhoDeCompras: Atributo itens(lista de objetos Produto). ✔️
 
-# Relação de Agregação : Os produtos (objetos Produto) podem existir independentemente do carrinho.
+# Relação de Agregação : Os produtos (objetos Produto) podem existir independentemente do carrinho. ✔️
 
-# Implemente métodos noCarrinhoDeCompras :
+# Implemente métodos no CarrinhoDeCompras :
 
-# adicionar_produto(produto): Adicionado um produto.
+# adicionar_produto(produto): Adicionado um produto.  ✔️
 
 # remover_produto(nome_produto): Remova um produto pelo nome.
 
 # calcular_total(): Retorna a soma dos preços de todos os itens.
-a = 1
-b = 2
-print(a ++ b)
+
+class Produtos:
+    def __init__(self, nome, preco):
+        self.nome = nome
+        self.preco = preco
+
+    def __repr__(self):
+        return f'nome = {self.nome}, preco = {self.preco:.2f}'
+    
+class CarrinhoDeCompras:
+    def __init__(self):
+        self.itens = []
+    
+    
+    def adcionar_produto(self, *produtos:Produtos):
+        self.itens += produtos
+        print(f'\033[1;32mProduto adicionado com sucesso!\033[m')
+        
+    
+    def listar_produtos(self):
+        if len(self.itens) != 0:
+            print('Lista de produtos:')
+            print()
+            for produto in self.itens:
+                print(produto)
+
+            print()
+        else:
+            print('\033[1;31mNão há nada para listar!\033[m')
+    
+    # def remover_produto(self, nome):
+    #     for produto in self.itens:
+    #         if produto.nome == nome:
+    #             print(self.itens)
+    #             print(len(self.itens))
+    #             print(f'{produto.nome} removido com sucesso!')
+    #     print(type(self.itens))
+
+
+
+
+carrinho = CarrinhoDeCompras()
+produto1 = Produtos('Caderno', 25)
+produto2 = Produtos('CD', 1.5)
+carrinho.adcionar_produto(produto1)
+carrinho.adcionar_produto(produto2)
+carrinho.listar_produtos()
+#print(produto1.nome)
+carrinho.remover_produto('Caderno')
+
+
+
