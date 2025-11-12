@@ -11,9 +11,9 @@
 
 # adicionar_produto(produto): Adicionado um produto.  ✔️
 
-# remover_produto(nome_produto): Remova um produto pelo nome.
+# remover_produto(nome_produto): Remova um produto pelo nome. ✔️
 
-# calcular_total(): Retorna a soma dos preços de todos os itens.
+# calcular_total(): Retorna a soma dos preços de todos os itens. ✔️
 
 class Produtos:
     def __init__(self, nome, preco):
@@ -21,8 +21,9 @@ class Produtos:
         self.preco = preco
 
     def __repr__(self):
-        return f'nome = {self.nome}, preco = {self.preco:.2f}'
+        return f'Nome = {self.nome}, Preço = {self.preco:.2f}'
     
+
 class CarrinhoDeCompras:
     def __init__(self):
         self.itens = []
@@ -44,14 +45,23 @@ class CarrinhoDeCompras:
         else:
             print('\033[1;31mNão há nada para listar!\033[m')
     
-    # def remover_produto(self, nome):
-    #     for produto in self.itens:
-    #         if produto.nome == nome:
-    #             print(self.itens)
-    #             print(len(self.itens))
-    #             print(f'{produto.nome} removido com sucesso!')
-    #     print(type(self.itens))
 
+    def remover_produto(self, nome):
+        for produto in self.itens:
+            if produto.nome == nome:
+                self.itens.remove(produto)
+                print(f'\033[1;31m{produto.nome} removido com sucesso!\033[m\n')
+
+            else:
+                print(f'\033[1;36m{nome} não pode ser removido pois não existe!\033[m\n')
+    
+
+    def soma_total(self):
+        soma = 0
+        for produto in self.itens:
+            soma += produto.preco
+        
+        print(f'O preço total do seu carrinho foi de \033[1;32mR${soma:.2f}\033[m')
 
 
 
@@ -61,8 +71,6 @@ produto2 = Produtos('CD', 1.5)
 carrinho.adcionar_produto(produto1)
 carrinho.adcionar_produto(produto2)
 carrinho.listar_produtos()
-#print(produto1.nome)
-carrinho.remover_produto('Caderno')
-
-
-
+# carrinho.remover_produto('Caderno')
+carrinho.listar_produtos()
+carrinho.soma_total()
