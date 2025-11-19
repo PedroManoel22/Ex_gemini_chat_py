@@ -1,6 +1,5 @@
-# Memoização simples#
-
- #Crie uma closure que armazene resultados anteriores numa cache interna (por exemplo, de uma função custo-computacional) 
+# Memoização simples
+#Crie uma closure que armazene resultados anteriores numa cache interna (por exemplo, de uma função custo-computacional) 
 # e os retorne quando a mesma entrada ocorrer novamente.
 
 def make_memoized(func):

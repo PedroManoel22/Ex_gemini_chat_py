@@ -18,3 +18,27 @@ class ItemBiblioteca:
     def __init__(self, titulo, ano_publicacao):
         self.titulo = titulo
         self.ano_publicacao = ano_publicacao
+    
+
+    def detalhes(self):
+        return (f'Título: {self.titulo}\n'
+                 f'Ano de publicação: {self.ano_publicacao}')
+    
+
+class Livro(ItemBiblioteca):
+    def __init__(self, titulo, ano_publicacao):
+        super().__init__(titulo, ano_publicacao)
+        self.autor = 'Pedro'
+        self.isbn = '123456'
+    
+    def detalhes(self):
+        super().detalhes()
+        return (f'{self.autor}')
+
+biblioteca = ItemBiblioteca('Black Sheep', 2021)
+# detalhes = biblioteca.detalhes()
+Livro.detalhes(detalhes)
+# print(detalhes)
+
+    
+        
