@@ -21,7 +21,7 @@
 #   'Direito': [{'nome': 'Ana', 'curso': 'Direito', 'idade': 19}]
 # }
 
-
+from pprint import pprint
 def agrupamento_por_curso(alunos, chave):
     dicionario_agrupado = {}
     for aluno in alunos:
@@ -43,4 +43,4 @@ alunos = [
  ]
 chave_agrupamento = 'curso'
 resultado = agrupamento_por_curso(alunos, chave_agrupamento)
-print(resultado)
+pprint(resultado)
