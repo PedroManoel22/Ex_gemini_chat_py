@@ -23,5 +23,5 @@ class Triangulo:
 
 
 triangulo1 = Triangulo(1, 2, 3)
-#triangulo_invalido = Triangulo(0, 2, 3)
+triangulo_invalido = Triangulo(0, 2, 3)
     
