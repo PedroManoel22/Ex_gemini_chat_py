@@ -2,10 +2,12 @@
 #Crie uma closure que armazene resultados anteriores numa cache interna (por exemplo, de uma função custo-computacional) 
 # e os retorne quando a mesma entrada ocorrer novamente.
 
-def make_memoized(func):
-    cache = {}  # Dicionário para guardar resultados anteriores
+from typing import Callable, Any
+
+def make_memoized(func: Callable[[Any], Any]) -> Callable[[Any], Any]:
+    cache: dict[Any, Any] = {}  # Dicionário para guardar resultados anteriores
     
-    def wrapper(arg):
+    def wrapper(arg: Any) -> Any:
         if arg not in cache:
             cache[arg] = func(arg)
         return cache[arg]
@@ -15,7 +17,7 @@ def make_memoized(func):
 # Exemplo de função "lenta"
 import time
 
-def slow_square(n):
+def slow_square(n: int):
     time.sleep(1)  # Simula operação dispendiosa
     return n * n
 
