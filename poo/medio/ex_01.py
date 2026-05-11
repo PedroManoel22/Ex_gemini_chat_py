@@ -1,73 +1,76 @@
 # Exercício 1: Sistema de Gestão de Biblioteca (Herança e Composição)
 # Chore como as seguintes classes:
 
-# ItemBiblioteca: Uma classe base abstrata (ou com slots para performance, dica profissional!) com atributos: titulo(string)
-#  e ano_publicacao(int). Deve ter um método detalhes()que retorna uma string formatada. ✔️
+# ItemBiblioteca: Uma classe base abstrata (ou com slots para performance,
+# dica profissional!) com atributos: titulo(string)
+#  e ano_publicacao(int). Deve ter um método detalhes() que retorna uma
+# string formatada. ✔️
 
-# Livro(Herda de ItemBiblioteca) : Adicionados os atributos autor(string) e isbn(string). Sobrescreva o método detalhes(). ✔️
+# Livro(Herda de ItemBiblioteca) : Adicionados os atributos autor(string) e
+# isbn(string). Sobrescreva o método detalhes(). ✔️
 
-# Revista(Herda de ItemBiblioteca) : Adicionado o atributo edicao(int). Sobrescreva o método detalhes(). ✔️
+# Revista(Herda de ItemBiblioteca) : Adicionado o atributo edicao(int).
+#  Sobrescreva o método detalhes(). ✔️
 
-# Biblioteca: Uma classe que compõe (tem uma lista de) objetos ItemBiblioteca. Desenvolva métodos para:
+# Biblioteca: Uma classe que compõe (tem uma lista de) objetos ItemBiblioteca.
+#  Desenvolva métodos para:
 
 # adicionar_item(item): Adiciona um item à lista.
 
 # buscar_por_titulo(titulo): Retorna o item encontrado.
 
-class ItemBiblioteca:
-    def __init__(self, titulo, ano_publicacao):
+
+from abc import abstractmethod, ABC
+
+
+class ItemBiblioteca(ABC):
+    def __init__(self, titulo: str, ano_publicacao: int) -> None:
         self.titulo = titulo
         self.ano_publicacao = ano_publicacao
-    
 
-    def detalhes(self):
-        return [self.titulo, self.ano_publicacao]
-    
+    @abstractmethod
+    def detalhes(self) -> str: ...
+
 
 class Livro(ItemBiblioteca):
-    def __init__(self, titulo, ano_publicacao, autor, isbn):
+    def __init__(self, titulo: str, ano_publicacao: int, autor: str, isbn: str):
         super().__init__(titulo, ano_publicacao)
         self.autor = autor
         self.isbn = isbn
-    
+
     def detalhes(self):
-        detalhes_base = super().detalhes()
-        detalhes_base.append(self.autor)
-        
-        return detalhes_base
+        return (
+            f"Titulo: {self.titulo}\n"
+            f"Ano de publicação: {self.ano_publicacao}\n"
+            f"Autor: {self.autor}\n"
+            f"Isbn: {self.isbn}"
+        )
 
 
 class Revista(ItemBiblioteca):
-    def __init__(self, titulo, ano_publicacao, edicao):
+    def __init__(self, titulo: str, ano_publicacao: int, edicao: int):
         super().__init__(titulo, ano_publicacao)
         self.edicao = edicao
-    
+
     def detalhes(self):
-        detalhes_base = super().detalhes()
-        detalhes_livro = (f'Edição: {self.edicao}\n')
-        
-        return detalhes_base + detalhes_livro
+        return (
+            f"Titulo: {self.titulo}\n"
+            f"Ano de publicação: {self.ano_publicacao}\n"
+            f"Edição: {self.edicao}"
+        )
+
+# class Biblioteca():
+#     def __init__(self):
+#         self.lista = []
+
+#     def adicionar_item(self, *args):
+
+#         for item in args:
+#             print(item)
 
 
-class Biblioteca():
-    def __init__(self):
-        self.lista = []
-
-    def adicionar_item(self, *args):
-
-        for item in args:
-            print(item)
-        
-    
-
-
-
-livro1 = Livro('Black Sheep', 2021,'Pedro', 123456)
-revista1 = Revista('Fofocas de 2025', 2025, 2)
-
-
-
-
+livro1 = Livro('Black Sheep', 2021, 'Pedro', "123456")
+print(livro1.detalhes())
 
 # from abc import ABC, abstractmethod
 
