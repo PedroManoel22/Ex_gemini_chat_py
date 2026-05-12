@@ -7,7 +7,7 @@
 
 # SMSNotificador (Herda de Notificador): Implementa o método enviar(mensagem) simulando o envio de um SMS. ✔️ 
 
-# Função de Teste: Crie uma função notificar_cliente(notificador, mensagem) que aceita qualquer objeto que seja um Notificador e chama seu método enviar().
+# Função de Teste: Crie uma função notificar_cliente(notificador, mensagem) que aceita qualquer objeto que seja um Notificador e chama seu método enviar(). ✔️ 
 
 
 from abc import ABC, abstractmethod
