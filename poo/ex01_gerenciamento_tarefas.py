@@ -18,11 +18,11 @@
 
 class Tarefa():
 
-    def __init__(self, descricao):
+    def __init__(self, descricao: str) -> None:
         self.descricao = descricao
         self.concluida = False
 
-    def marcar_como_concluida(self):
+    def marcar_como_concluida(self) -> None:
         if self.concluida:
             print(f'\033[1;31mA tarefa \033[m"{self.descricao}"\033[m\033[1;31m já está concluída!\033[m')
         
@@ -31,14 +31,14 @@ class Tarefa():
             self.concluida = True
 
 
-    def __str__(self):
+    def __str__(self) -> str:
 
         status = 'X' if self.concluida else ''
         return f'[{status}] {self.descricao}'
 
-
-tarefa_1 = Tarefa('café')
-print(f'Tarefa criada: {tarefa_1}')
-tarefa_1.marcar_como_concluida()
-print(f'Tarefa atualizada: {tarefa_1}')
-tarefa_1.marcar_como_concluida()
+if __name__ == "__main__":
+    tarefa_1 = Tarefa('café')
+    print(f'Tarefa criada: {tarefa_1}')
+    tarefa_1.marcar_como_concluida()
+    print(f'Tarefa atualizada: {tarefa_1}')
+    tarefa_1.marcar_como_concluida()
