@@ -18,7 +18,7 @@
 
 # Dica Pythônica: Use o decorator @property para o getter e @saldo.setter
 #  para o setter, se fosse o caso (mas, neste exercício, queremos apenas 
-# o getter para proteger o saldo de alterações externas não rastreadas).
+# o getter para proteger o saldo de alterações externas não rastreadas).✔️
 
 
 class ContaBancaria:
