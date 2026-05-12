@@ -27,23 +27,22 @@ class ContaBancaria:
         self._numero_conta = numero_conta
     
     @property
-    def saldo(self):
+    def saldo(self) -> float:
         return self._saldo
 
     @saldo.getter
-    def saldo(self):
+    def saldo(self) -> str:
         return f"R${self._saldo}"
     
-    def depositar(self, valor: float):
+    def depositar(self, valor: float) -> None:
         if valor > 0:
             self._saldo += valor
         else:
             print("\n\033[31mPor favor insira um valor postivo!\n\033[m")
 
-    def sacar(self, valor: float):
+    def sacar(self, valor: float) -> None:
         if valor > 0 and valor <= self._saldo:
             self._saldo -= valor
         else:
             print("\n\033[31mO valor a ser sacado deve ser positivo e menor que o saldo!\n\033[m")
             
-    
