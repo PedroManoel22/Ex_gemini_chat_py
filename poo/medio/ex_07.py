@@ -21,3 +21,31 @@
 # with Temporizador():
 #     # Código demorado aqui, ex: time.sleep(1)
 #     pass
+
+from time import sleep, time
+from types import TracebackType
+from typing import Optional, Type
+
+
+class Temporizador:
+    def __enter__(self):
+        self.inicio = time()
+        return self
+
+    def __exit__(
+        self,
+        exc_type: Optional[Type[BaseException]],
+        exc: Optional[BaseException],
+        tb: Optional[TracebackType],
+    ):
+        self.fim = time()
+        tempo_total = self.fim - self.inicio
+        print(f"Tempo de execução: {tempo_total:.2f} segundos")
+
+
+if __name__ == "__main__":
+    print("Iniciando")
+    with Temporizador():
+        sleep(1.5)
+        print("Trabalhando...")
+    print("Bloco finalizado")
