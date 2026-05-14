@@ -9,20 +9,23 @@
 
 # Método __mul__: Permite multiplicar o vetor por um escalar (float/int) usando o operador *. O resultado deve ser um novo objeto Vetor2D. ✔️
 
+from __future__ import annotations
+
+
 class Vetor2D:
     def __init__(self, x: float, y: float) -> None:
         self.x = x
         self.y = y
-    
+
     def __repr__(self) -> str:
         return f"{self.__class__.__name__}(x={self.x:.1f}, y={self.y:.1f})"
 
-    def __add__(self, other: Vetor2D):
+    def __add__(self, other: Vetor2D) -> Vetor2D:
         x = self.x + other.x
         y = self.y + other.y
         return Vetor2D(x, y)
-    
-    def __mul__(self, num: float):
+
+    def __mul__(self, num: float) -> Vetor2D:
         x = self.x * num
         y = self.y * num
         return Vetor2D(x, y)
